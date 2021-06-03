@@ -29,9 +29,8 @@ class Game {
 
     play(){
         form.hide();
-        textSize(30);
-        text("Results",300,100);
-
+        textSize(25);
+        text("Results",displayWidth/2 - 50,230);
         
 
         Player.getPlayerInfo();
@@ -47,7 +46,7 @@ class Game {
 
         if(allPlayers != undefined){
            
-            var display_position = 130;
+            var display_position = 250;
             for(var plr in allPlayers ){
                 //display_position +=20;
                 
@@ -55,14 +54,15 @@ class Game {
                 
                 if(allPlayers[plr].answer==="3"){
                     fill("green")
-                   
+                  
                 }
                 else {
                     fill("red")
+                  
                 }
                 display_position +=20 ;
                 textSize(18);
-                 text(allPlayers[plr].name + " : " + allPlayers[plr].answer,220,display_position);
+                 text(allPlayers[plr].name + " : " + allPlayers[plr].answer,600,display_position);
             }
         }
 

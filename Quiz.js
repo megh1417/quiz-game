@@ -45,6 +45,10 @@ class Form{
            this.input1.hide();
            this.input2.hide();
            this.button.hide();
+           this.option1.hide();
+           this.option2.hide();
+           this.option3.hide();
+           this.option4.hide();
 
             player.name = this.input1.value();
             player.answer = this.input2.value();
@@ -56,8 +60,8 @@ class Form{
             player.update();
             player.updateCount(playerCount);
 
-            this.greeting.html("Hi " + player.name);
-            this.greeting.position(displayWidth/1.5 + 200 ,210);
+            this.greeting.html("waiting for answer..");
+            this.greeting.position(displayWidth/2 - 100 ,300);
             
         });
 
